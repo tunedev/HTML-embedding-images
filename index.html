@@ -16,17 +16,45 @@
       <img src="images/download.png" class="logo" />
       <form class="search-field">
         <input type="text" class="search-input" placeholder="Search" />
-          <button type="submit" class="search-btn">
+        <button type="submit" class="search-btn">
           <i class="fa fa-search"></i>
-          <button type="submit" class="signin"> Sign in</button>
         </button>
       </form>
-      <div class="language-choice"> Choose your language. </div>
-      <div class="language-display"> You're viewing YouTube in English (US). You can <a href="#">change this preference below. </a> </div>
+      <i class="fa fa-upload upload-icon" aria-hidden="true"></i>
+      <button type="submit" class="signin">Sign in</button>
     </header>
+    <div class="info">
+      <div class="language-choice">Choose your language.</div>
+      <div class="language-display">
+        You're viewing YouTube in English (US). You can
+        <a href="#">change this preference below. </a>
+      </div>
+    </div>
     <main>
-      <div class="video-block">video block</div>
-      <div class="sidebar">side bar</div>
+      <div class="video-block">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZnuwB35GYMY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="sidebar">
+        <div class="video-option-card">
+          <img
+            class="thumbnail"
+            src="./images/thumbnail1.jpg"
+            alt="video thumbnail"
+          />
+          <div class="video-details">
+            <h4 class="video-title">contributing to open source part 2</h4>
+            <p class="video-author">The odin project</p>
+            <p class="video-views">10,000 views</p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
