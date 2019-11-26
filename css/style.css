@@ -54,3 +54,11 @@ main {
 .search-input {
   padding-left: 10px;
 }
+
+.signin {
+  height: 30px;
+  width: 50px;
+  top: -27px;
+  margin-left: 115%;
+  padding-left: 10px;
+}
