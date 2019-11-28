@@ -5,7 +5,7 @@
 ---
 _About the Project_
 
-The project is about a clone of the youtube page done from scratch to ensure a perfect output while testing the skills and knowledge in HTML/CSS. AMong the features inplemented are: the logo, search box, search button, video container and the side bar and many other as shown in the link below.
+The project is about a clone of the youtube page done from scratch to ensure a perfect output while testing the skills and knowledge in HTML/CSS. Among the features implemented are: the logo, search box, search button, video container and the side bar and many other as shown in the link below.
 Link to it [here](https://tunedev.github.io/HTML-embedding-images/.)
 
 
