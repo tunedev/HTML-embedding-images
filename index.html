@@ -12,22 +12,40 @@
     <title>Youtube clone</title>
   </head>
   <body>
+    <!-- Start Header Section -->
     <header class="nav-bar">
+      <i class="fa fa-bars grey-icon" aria-hidden="true"></i>
       <img src="images/download.png" class="logo" />
-        <form class="search-field">
+      <form class="search-field">
         <input type="text" class="search-input" placeholder="Search" />
         <button type="submit" class="search-btn">
           <i class="fa fa-search grey-icon"></i>
         </button>
       </form>
       <i class="fa fa-upload upload-icon grey-icon" aria-hidden="true"></i>
-      <img src="./images/create-video.png" class="create-video-icon" alt="select show image">
-      <img src="./images/showapps.png" class="gray-icons apps-icon" alt="missing image">
-      <img src="./images/notifications.png" class="notification-icon" alt="missing icon">
+      <img
+        src="./images/create-video.png"
+        class="create-video-icon"
+        alt="select show image"
+      />
+      <img
+        src="./images/showapps.png"
+        class="gray-icons apps-icon"
+        alt="missing image"
+      />
+      <img
+        src="./images/notifications.png"
+        class="notification-icon"
+        alt="missing icon"
+      />
       <button type="submit" class="signin">Sign in</button>
     </header>
+    <!-- End Header Section -->
+
+    <!-- Start Main Section -->
     <main>
-      <div class="video-block">
+      <!-- Start Playing Video Section -->
+      <section class="video-block">
         <iframe
           width="560"
           height="315"
@@ -37,7 +55,9 @@
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <div class="video-details-card">
+
+        <!-- Start Playing Video details  -->
+        <article class="video-details-card">
           <h2 class="video-title">
             Contributing to Open source Part 1: The easy way
           </h2>
@@ -50,7 +70,7 @@
                   <i class="fa fa-youtube-play"></i> Subscribe
                 </button>
               </div>
-              </div>
+            </div>
             <p class="views">50,016 views</p>
           </div>
           <hr />
@@ -81,9 +101,40 @@
             </div>
           </div>
           <div class="section-3"></div>
+        </article>
+        <!-- End Playing Video details  -->
+        <article class="video-details-card">
+          <h5 class="published-date">
+            Published on Feb 27, 2014
+          </h5>
+          <div class="section-1">
+            <p class="video-description">
+              How do you contribute to open source? In this video, I'll describe
+              the easiest way to make a simple contribution to an open source
+              project -- without using the command line, a text editor, "forking
+              a repo", or even touching Git outside of Github. I'll also
+              describe what kinds of contributions open source software projects
+              are typically looking for. As an example, I use submitting a
+              student solution to a web development exercise from The Odin
+              Project, a free online curriculum for learning web development
+              with Ruby on Rails. You can find more information about that
+              project at http://theodinproject.com.
+            </p>
+          </div>
+          <hr />
+          <div>
+            <p class="show-more">show more</p>
+          </div>
+        </article>
+      </section>
+      <!-- End Playing Video Section -->
+
+      <!-- Start Sidebar Section -->
+      <aside class="sidebar">
+        <div class="section-label">
+          <p class="up-next">Up next</p>
+          <p class="auto-play">Auto play</p>
         </div>
-      </div>
-      <div class="sidebar">
         <div class="video-option-card">
           <img
             class="thumbnail"
@@ -91,11 +142,12 @@
             alt="video thumbnail"
           />
           <div class="video-details">
-            <h4 class="video-title">contributing to open source part 2</h4>
+            <h4 class="video-title">Contributing to open source part 2</h4>
             <p class="video-author">The odin project</p>
             <p class="video-views">10,000 views</p>
           </div>
         </div>
+        <hr />
         <div class="video-option-card">
           <img
             class="thumbnail"
@@ -103,7 +155,7 @@
             alt="video thumbnail"
           />
           <div class="video-details">
-            <h4 class="video-title">contributing to open source part 2</h4>
+            <h4 class="video-title">Contributing to open source part 2</h4>
             <p class="video-author">The odin project</p>
             <p class="video-views">10,000 views</p>
           </div>
@@ -168,7 +220,9 @@
             <p class="video-views">1000 views</p>
           </div>
         </div>
-      </div>
+      </aside>
+      <!-- End Video Section -->
     </main>
+    <!-- End Main Section -->
   </body>
 </html>

@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Roboto-Font import */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+/* General attribute */
 * {
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
 }
+/* End General attributes */
+
+/* Page Setup */
 
 html {
   background: #f1f1f1;
@@ -23,6 +29,9 @@ main {
   margin-top: 30px;
 }
 
+/* End Page Setup */
+
+/* Header Section */
 .nav-bar {
   background: #ffffff;
   box-sizing: border-box;
@@ -30,29 +39,13 @@ main {
   align-items: center;
   justify-content: space-around;
   flex: 0 0 100%;
-}
-
-.video-block {
-  height: 100%;
-}
-
-.sidebar {
-  height: 100%;
-  box-shadow: 0 0px 2px 2px #cccccc;
-  padding: 5px 0px;
-  background: white;
+  padding: 0 20px;
 }
 
 .logo {
   width: 70px;
   height: 50px;
   margin-left: 30px;
-}
-
-.main-video {
-  min-width: 70%;
-  margin: 40px auto;
-  display: block;
 }
 
 .search-field {
@@ -81,67 +74,42 @@ main {
   margin: auto;
 }
 
-.info {
-  width: 100%;
+.apps-icon {
+  max-width: 25px;
+  max-height: 25px;
+  color: gray;
+  margin-left: 15px;
 }
 
-.language-choice {
-  background: cornflowerblue;
-  height: 37px;
-  width: 100%;
-  padding-left: 30px;
-  position: relative;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+.create-video-icon {
+  max-width: 35px;
+  max-height: 35px;
+  margin-left: 15px;
+}
+.notification-icon {
+  max-width: 33px;
+  max-height: 33px;
+  margin-left: 15px;
 }
 
-.language-display {
-  height: 37px;
-  width: 100%;
-  padding-left: 30px;
-  border: 3px solid cornflowerblue;
+/* End Header Section */
+
+/* Playing Video section */
+.video-block {
+  height: 100%;
 }
 
-.thumbnail {
-  width: 200px;
-  height: 100px;
-}
-
-.video-option-card {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 40% auto;
-  max-width: 500px;
-  margin: 15px auto;
-}
-
-.video-details {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-}
-
-.video-title {
-  font-size: 19px;
-  display: inline-block;
-}
-
-.icon-white {
-  color: white;
-}
-
-.grey-icon {
-  color: grey;
+.main-video {
+  width: 75%;
+  margin: 0 auto 40px auto;
+  display: block;
 }
 
 .video-details-card {
   display: grid;
-  grid-auto-rows: auto auto auto;
-  width: 70%;
-  margin: 5px auto;
+  grid-auto-rows: auto;
+  width: 72.5%;
+  margin: 20px auto;
   padding: 10px;
   background: white;
   box-shadow: 0 0px 2px 2px #cccccc;
@@ -199,25 +167,84 @@ main {
   bottom: 10px;
 }
 
-.section-1{
+.section-1 {
   justify-content: space-between;
   margin: 10px 0;
 }
 
-.apps-icon{
-  max-width: 25px;
-  max-height: 25px;
-  color: gray;
-  margin-left: 15px;
+.video-description {
+  font-size: 12px;
+  font-weight: 300;
 }
 
-.create-video-icon{
-  max-width: 35px;
-  max-height: 35px;
-  margin-left: 15px;
+.show-more {
+  color: grey;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
 }
-.notification-icon{
-  max-width: 33px;
-  max-height: 33px;
-  margin-left: 15px;
+/* End Playing video section */
+
+/* Sidebar Section */
+
+.sidebar {
+  box-shadow: 0 0px 2px 2px #cccccc;
+  padding: 5px 0px;
+  background: white;
 }
+
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 10px 0px 20px 30px;
+}
+
+.sidebar hr {
+  margin: -20px 30px 15px 30px;
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 80%;
+}
+
+.video-option-card {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50% 50%;
+  width: 90%;
+  height: 150px;
+  margin: 5px auto;
+  box-sizing: border-box;
+}
+
+.video-details {
+  display: grid;
+  grid-template-rows: auto 15% 50%;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.video-title {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.icon-white {
+  color: white;
+}
+
+.grey-icon,
+.video-author,
+.video-views {
+  color: grey;
+}
+
+.video-author,
+.video-views {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* End sidebar section */
